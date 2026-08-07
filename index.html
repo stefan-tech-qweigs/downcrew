@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn Crew: New World</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Particles background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- Логотип по центру -->
+    <img src="whbg-no-bg-preview (carve.photos).png" alt="Dawn Crew: New World" class="hero-logo" />
+    
+    <!-- Подзаголовок -->
+    <p class="hero-subtitle">Выживание · Приключения · Моды · Свои правила</p>
+
+    <!-- Основная кнопка -->
+    <a href="#download" class="hero-cta">Начать приключение</a>
+
+    <!-- Скролл-подсказка -->
+    <div class="scroll-hint">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </header>
+
+  <!-- IP BLOCK — вынесен отдельной секцией -->
+  <section class="ip-section">
+    <div class="ip-block">
+      <span class="ip-label">IP сервера</span>
+      <div class="ip-row">
+        <span class="ip-address" id="ip-text">play.dawncrew.ru</span>
+        <button class="btn-copy" id="copy-btn" onclick="copyIP()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span id="copy-label">Скопировать</span>
+        </button>
+      </div>
+      <div class="server-meta">
+        <span class="meta-badge">
+          <span class="dot green"></span>Онлайн
+        </span>
+        <span class="meta-badge">⚔ Версия: 1.20.1</span>
+        <span class="meta-badge">🧱 Forge</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2 class="section-title">Что тебя ждёт</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🐉</div>
+        <h3>Боссы и подземелья</h3>
+        <p>Новые мобы, данжи и уникальные боссы по всему миру. Смерть — это только начало.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚂</div>
+        <h3>Технологии</h3>
+        <p>Стройте заводы, прокладывайте железные дороги и автоматизируйте всё вокруг.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌌</div>
+        <h3>Новые измерения</h3>
+        <p>Порталы ведут в миры, которых нет в ванилле. Нашёл портал — рискни войти.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏰</div>
+        <h3>Своя база</h3>
+        <p>Защищай территорию, стройте с друзьями. Никакого гриферства — только честная игра.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODS DOWNLOAD -->
+  <section class="download-section" id="download">
+    <h2 class="section-title">Скачать моды</h2>
+    <p class="download-desc">
+      Нужен Forge <strong>1.20.1</strong>. Скачай сборку модов и закинь в папку <code>mods</code>.
+    </p>
+    <div class="download-steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <p>Установи <a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank" rel="noopener">Forge 1.20.1</a></p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <p>Скачай сборку модов ниже</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <p>Распакуй архив в папку <code>.minecraft/mods</code></p>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <p>Запусти игру и подключайся!</p>
+      </div>
+    </div>
+    <div class="download-buttons">
+      <div class="download-btn-wrap">
+        <a href="#" class="btn-download btn-gdrive" id="mods-link-gdrive">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Google Drive
+        </a>
+        <p class="download-size">~ 150 MB</p>
+      </div>
+      <div class="download-btn-wrap">
+        <a href="#" class="btn-download btn-yadisk" id="mods-link-yadisk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Яндекс Диск
+        </a>
+        <p class="download-size">~ 150 MB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO JOIN -->
+  <section class="howto-section">
+    <h2 class="section-title">Как подключиться</h2>
+    <ol class="howto-list">
+      <li>Открой Minecraft → <strong>Мультиплеер</strong></li>
+      <li>Нажми <strong>Добавить сервер</strong></li>
+      <li>Вставь IP: <code id="ip-inline">play.dawncrew.ru</code></li>
+      <li>Готово — жми <strong>Войти</strong></li>
+    </ol>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Dawn Crew: New World &copy; 2026 · Сервер для своих</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
