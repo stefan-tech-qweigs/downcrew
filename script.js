@@ -3,7 +3,7 @@
    ============================================ */
 
 // ---- Config ----
-const SERVER_IP      = 'play.dawncrew.ru';
+const SERVER_IP      = '5.188.159.15:30569';
 const MODS_GDRIVE    = '#'; // <-- ссылка Google Drive
 const MODS_YADISK    = '#'; // <-- ссылка Яндекс Диск
 
