@@ -4,8 +4,8 @@
 
 // ---- Config ----
 const SERVER_IP      = '5.188.159.15:30569';
-const MODS_GDRIVE    = '#'; // <-- ссылка Google Drive
-const MODS_YADISK    = '#'; // <-- ссылка Яндекс Диск
+const MODS_GDRIVE    = 'https://drive.google.com/uc?export=download&id=1PCIx42VDrjqxV9kNxtVsL2BLPIuAX3Vi'; // Google Drive
+const MODS_YADISK    = 'https://disk.yandex.ru/d/NtuSwTDCsXTSFA'; // Яндекс Диск
 
 // ---- IP Copy ----
 function copyIP() {
